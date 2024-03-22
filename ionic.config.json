@@ -1,0 +1,7 @@
+{
+  "name": "Ecommerce-Projeto-Aula",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
