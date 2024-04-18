@@ -1,12 +1,3 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -14,8 +5,46 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Tuca Coach.</ion-card-subtitle>
+        <ion-card-title>Comunicação não violenta</ion-card-title>
+      </ion-card-header>
+      <img
+        src="https://www.tucacoach.com.br/assets/img/Ebooks/Comunica%C3%A7%C3%A3o.jpg"
+      />
+      <ion-button expand="full" (click)="addToCart(produtos[0])"
+        >Comprar</ion-button
+      >
+    </ion-card>
+  </ion-item>
+
+  <ion-item>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Tuca Coach.</ion-card-subtitle>
+        <ion-card-title>4 Passos</ion-card-title>
+      </ion-card-header>
+      <img
+        src="https://www.tucacoach.com.br/assets/img/Ebooks/4%20passoss.jpg"
+      />
+      <ion-button expand="full" (click)="addToCart(produtos[1])"
+        >Comprar</ion-button
+      >
+    </ion-card>
+  </ion-item>
+
   <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>
+      Explore
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components"
+        >UI Components</a
+      >
+    </p>
   </div>
 </ion-content>
